@@ -1,0 +1,19 @@
+Verification record — Lưu Quang Khải, MSSV 2202602599
+
+Executed successfully during completion:
+.venv\Scripts\python.exe -m pytest -q tests/test_todos.py
+31 passed (final TODO implementation including hazard actor handling).
+
+.venv\Scripts\python.exe -m pytest -q tests/test_parity.py
+10 passed in 168.82s; no parity tests skipped.
+
+.venv\Scripts\python.exe -u run_all.py all
+Completed world, replay, mc, hunt, estimate, fix and export with full budgets; exit code 0.
+Hazard was created after the all invocation started, so G was then run explicitly:
+.venv\Scripts\python.exe -u run_all.py mine hazard.json
+Completed 1500 draws, 1491 feasible, both baseline and chosen policy; exit code 0.
+.venv\Scripts\python.exe run_all.py export
+Completed after mine, with 17 saved runs and 6000 plotted cloud points.
+
+No --quick evidence was used. Student ID, town B, unsalted seeds and full budgets are recorded in the JSON _run fields and meta.json.
+Extra diagnostic replay files are identified in REPORT.md and are excluded from the probability-estimation budget.

@@ -1,5 +1,5 @@
 __pycache__/
 .pytest_cache/
 .venv/
-evidence/
+submission-*.zip
 .DS_Store
